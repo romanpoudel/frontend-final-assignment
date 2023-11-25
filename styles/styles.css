@@ -623,4 +623,15 @@ button {
   align-items: flex-start;
 }
 
+.sponsers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.sponsers img {
+  width: 100%;
+  min-width: 72px;
+}
+
 /*# sourceMappingURL=styles.css.map */
