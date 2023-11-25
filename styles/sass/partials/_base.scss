@@ -10,3 +10,12 @@ a {
 button {
     appearance: none;
 }
+
+input{
+    appearance: none;
+    border: none;
+    outline: none;
+    &:focus {
+        border: 3px solid $primary-color;
+    }
+}
