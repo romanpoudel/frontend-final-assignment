@@ -1,0 +1,103 @@
+.hero {
+	padding-top: 100px;
+	&__top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+		@media screen and (min-width: 1440px) {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: normal;
+		}
+	}
+	&__left {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		@media screen and (min-width: 1440px) {
+			gap: 50px;
+		}
+	}
+	&__right {
+		img {
+			width: 306px;
+			@media screen and (min-width: 768px) {
+				width: 622px;
+			}
+			@media screen and (min-width: 1440px) {
+				width: 662px;
+			}
+		}
+	}
+	&__btn {
+		display: flex;
+		gap: 20px;
+	}
+	p {
+		font-size: $sm-font-size;
+		margin: 0;
+		color: $primary-color;
+		font-weight: 700;
+		@media screen and (min-width: 768px) {
+			font-size: $lg-font-size;
+		}
+		@media screen and (min-width: 1440px) {
+			font-size: $base-font-size;
+		}
+	}
+	h2 {
+		margin: 0;
+		color: $secondary-color;
+		font-size: $base-font-size;
+		@media screen and (min-width: 768px) {
+			font-size: 36px;
+		}
+		@media screen and (min-width: 1440px) {
+			font-size: $heading-font-size;
+		}
+		font-weight: 800;
+		:nth-child(3) {
+			color: $primary-color;
+		}
+		span {
+			display: block;
+		}
+	}
+	&__title {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		@media screen and (min-width: 768px) {
+			gap: 40px;
+		}
+	}
+	&__desc {
+		color: rgba(255, 255, 255, 0.7);
+		font-size: $md-font-size;
+		width: 300px;
+		font-weight: 700;
+		@media screen and (min-width: 768px) {
+			font-size: $text-font-size;
+			width: 530px;
+		}
+		@media screen and (min-width: 1440px) {
+			font-size: $base-font-size;
+			max-height: 2.4em;
+			line-height: 1.2em;
+			width: auto;
+		}
+	}
+	&__bottom {
+		color: $secondary-color;
+		img {
+			border-radius: 10px;
+			background: rgba(196, 196, 196, 0.1);
+			padding: 5px;
+			@media screen and (min-width: 768px) {
+				padding: 10px;
+			}
+		}
+	}
+}

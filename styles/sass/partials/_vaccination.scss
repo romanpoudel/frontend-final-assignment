@@ -1,0 +1,39 @@
+.vaccine {
+    font-size: $md-font-size;
+    @media screen and (min-width: 768px) {
+        font-size: $base-font-size;
+        
+    }
+    font-weight: 700;
+    &__top{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    &__bottom{
+        border-radius: 20px 20px 0px 0px;
+        background: rgba(196, 196, 196, 0.05);
+        border-top: 12px solid rgba(196, 196, 196, 0.03);
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+        justify-content: space-between;
+        @media screen and (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        @media screen and (min-width: 1440px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            
+        }
+    }
+	&__item{
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        // width: 254px;
+    }
+}
