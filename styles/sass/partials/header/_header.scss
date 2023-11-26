@@ -31,23 +31,21 @@
 						font-weight: 700;
 					}
 				}
-				
 			}
 			&__menu {
 				display: none;
 			}
 		}
 	}
-	&__logo{
+	&__logo {
 		width: 150px;
 		@media screen and (min-width: 768px) {
 			width: 200px;
-			
 		}
 		@media screen and (min-width: 1440px) {
 			width: auto;
 		}
-		img{
+		img {
 			width: 100%;
 		}
 	}

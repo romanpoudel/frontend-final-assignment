@@ -94,7 +94,9 @@
 	}
 	&__status {
         display: flex;
-        justify-content: space-between;
+        gap: 20px;
+		align-items: center;
+		justify-content: center;
 		color: rgba(0, 0, 0, 0.5);
 		font-size: $md-font-size;
 		font-weight: 600;
