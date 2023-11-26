@@ -924,6 +924,9 @@ figure {
   gap: 20px;
 }
 
+.registration {
+  padding: 40px 0;
+}
 @media screen and (min-width: 1440px) {
   .registration {
     display: flex;
@@ -962,7 +965,6 @@ figure {
 }
 .registration__right {
   display: none;
-  padding: 70px 0;
 }
 @media screen and (min-width: 1440px) {
   .registration__right {
@@ -1035,6 +1037,69 @@ figure {
 @media screen and (max-width: 768px) {
   .registration button {
     border-radius: 10px;
+  }
+}
+.registration__status {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 600;
+}
+.registration__status :nth-child(2) {
+  color: #17C2EC;
+}
+
+.symptoms {
+  padding-top: 25px;
+}
+.symptoms__top {
+  text-align: center;
+}
+.symptoms__top h2 {
+  padding: 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .symptoms__top h2 {
+    font-size: 36px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .symptoms__top h2 {
+    font-size: 48px;
+  }
+}
+.symptoms__bottom img {
+  width: 100%;
+}
+.symptoms__desc {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .symptoms__desc {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .symptoms__desc {
+    font-size: 24px;
+  }
+}
+.symptoms__super {
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .symptoms__super {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .symptoms__super {
+    font-size: 24px;
   }
 }
 
