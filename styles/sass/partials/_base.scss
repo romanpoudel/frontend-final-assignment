@@ -2,6 +2,7 @@
 
 body{
     font-family: "Montserrat", sans-serif;
+    color: $secondary-color;
 }
 a {
 	text-decoration: none;
@@ -18,4 +19,7 @@ input{
     &:focus {
         border: 3px solid $primary-color;
     }
+}
+figure{
+    margin: 0;
 }

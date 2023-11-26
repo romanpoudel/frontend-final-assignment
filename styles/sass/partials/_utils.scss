@@ -16,7 +16,23 @@
 	background-size: cover;
 }
 
-.light-text{
+.light-text {
 	color: $tertiary-color;
 	font-weight: 600;
+}
+
+.rm-mp {
+	margin: 0;
+	padding: 0;
+}
+
+.more-btn {
+	a {
+		display: flex;
+		align-items: center;
+		color: $tertiary-color;
+	}
+	img {
+		width: 20px;
+	}
 }
