@@ -15,6 +15,9 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.secondary-background {
+	background: $secondary-color;
+}
 
 .light-text {
 	color: $tertiary-color;
@@ -34,5 +37,17 @@
 	}
 	img {
 		width: 20px;
+	}
+}
+
+@mixin input-styles{
+	border-radius: 10px;
+	padding: 16px 23px;
+	border: 3px solid rgba(196, 196, 196, 0.15);
+	font-weight: 500;
+	
+	@media screen and (min-width: 768px) {
+		border-radius: 20px;
+		padding: 20px 25px;
 	}
 }

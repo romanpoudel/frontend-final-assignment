@@ -365,6 +365,10 @@ figure {
   background-size: cover;
 }
 
+.secondary-background {
+  background: #fff;
+}
+
 .light-text {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 600;
@@ -716,8 +720,8 @@ figure {
   border-radius: 10px;
   padding: 16px 23px;
   border: 3px solid rgba(196, 196, 196, 0.15);
-  color: #fff;
   font-weight: 500;
+  color: #fff;
   background: transparent;
 }
 @media screen and (min-width: 768px) {
@@ -918,6 +922,120 @@ figure {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .registration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.registration__title {
+  font-size: 24px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .registration__title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .registration__title {
+    font-size: 48px;
+  }
+}
+.registration__img {
+  height: 420px;
+  text-align: center;
+}
+.registration__img img {
+  height: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .registration__img {
+    display: none;
+  }
+}
+.registration__right {
+  display: none;
+  padding: 70px 0;
+}
+@media screen and (min-width: 1440px) {
+  .registration__right {
+    display: block;
+  }
+}
+.registration label {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+}
+.registration input {
+  border-radius: 10px;
+  padding: 16px 23px;
+  border: 3px solid rgba(196, 196, 196, 0.15);
+  font-weight: 500;
+  background-color: rgba(11, 21, 60, 0.15);
+}
+@media screen and (min-width: 768px) {
+  .registration input {
+    border-radius: 20px;
+    padding: 20px 25px;
+  }
+}
+.registration__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration__name {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration__name input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.registration__phone {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration__phone--desc {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+}
+.registration__phone--verify {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .registration__phone--verify {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .registration__phone--verify input {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .registration__phone--verify {
+    gap: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .registration button {
+    border-radius: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
