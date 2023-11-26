@@ -5,11 +5,13 @@
 @import "partials/button";
 
 //specific scss
-@import "partials/header";
-@import "partials/hero";
-@import "partials/vaccination";
-@import "partials/sponsers";
-@import "partials/result";
-@import "partials/info";
-@import "partials/registration";
-@import "partials/symptoms";
+@import "partials/header/header";
+@import "partials/header/hero";
+
+@import "partials/main/vaccination";
+@import "partials/main/sponsers";
+@import "partials/main/result";
+@import "partials/main/info";
+@import "partials/main/registration";
+@import "partials/main/symptoms";
+@import "partials/main/feedback";

@@ -1,0 +1,118 @@
+.feedback {
+    padding:40px 0;
+	&__top {
+		text-align: center;
+        padding-bottom: 40px;
+	}
+	&__header {
+		text-transform: uppercase;
+		color: $primary-color;
+		text-align: center;
+		font-size: $md-font-size;
+		font-weight: 700;
+		@media screen and (min-width: 768px) {
+			font-size: 20px;
+		}
+		@media screen and (min-width: 1440px) {
+			font-size: $base-font-size;
+		}
+	}
+	&__title {
+        padding:20px 0 40px 0;
+		color: $black;
+		text-align: center;
+		font-size: $base-font-size;
+		font-weight: 800;
+		@media screen and (min-width: 768px) {
+			font-size: 36px;
+		}
+		@media screen and (min-width: 1440px) {
+			font-size: $heading-font-size;
+		}
+	}
+	&__desc {
+		color: rgba(0, 0, 0, 0.5);
+		font-size: $sm-font-size;
+		font-weight: 500;
+		@media screen and (min-width: 768px) {
+			font-size: $lg-font-size;
+		}
+		@media screen and (min-width: 1440px) {
+			font-size: $base-font-size;
+		}
+	}
+    &__client{
+        padding-left: 20px;
+    }
+	&__name {
+		color: $black;
+		font-size: 15px;
+		font-weight: 700;
+        @media screen and (min-width: 768px) {
+            font-size: 20px;
+            
+        }
+        @media screen and (min-width: 1440px) {
+            font-size:$base-font-size;
+        }
+	}
+	&__address {
+		color: rgba(0, 0, 0, 0.5);
+		font-size: $xs-font-size;
+		font-weight: 700;
+        @media screen and (min-width: 768px) {
+            font-size: $md-font-size;
+            
+        }
+	}
+	&__words {
+		color: rgba(0, 0, 0, 0.60);
+		font-size: $sm-font-size;
+		font-weight: 500;
+        text-align: center;
+        span{
+            color: $primary-color;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: $lg-font-size;
+            
+        }
+	}
+	&__card {
+        border-radius: 20px;
+        padding: 30px;
+        max-width: 305px;
+        background: rgba(196, 196, 196, 0.50);
+        background-image: url("../assets/img/feedback/medicine.png");
+        background-repeat: no-repeat;
+        background-position: top right;
+        @media screen and (min-width: 768px) {
+            max-width: 400px;   
+        }
+        &:nth-child(2){
+            background: $primary-color;
+        }
+		&--top {
+            display: flex;
+            align-items: center;
+            padding-bottom: 40px;
+			img {
+				width: 54px;
+                @media screen and (min-width: 768px) {
+                    width: auto;
+                }
+			}
+		}
+	}
+    &__bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        @media screen and (min-width: 1440px) {
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+    }
+}
