@@ -660,13 +660,26 @@ figure {
 }
 
 .sponsers {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
+  padding: 5px 0;
+}
+@media screen and (min-width: 768px) {
+  .sponsers {
+    gap: auto;
+    padding: 11px 0;
+  }
 }
 .sponsers img {
-  width: 100%;
-  min-width: 72px;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .sponsers img {
+    max-width: 140px;
+  }
 }
 
 .result {
