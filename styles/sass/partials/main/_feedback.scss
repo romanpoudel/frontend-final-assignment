@@ -1,9 +1,9 @@
 .feedback {
-    padding:40px 0;
-	padding-bottom:180px ;
+	padding: 40px 0;
+	padding-bottom: 200px;
 	&__top {
 		text-align: center;
-        padding-bottom: 40px;
+		padding-bottom: 40px;
 	}
 	&__header {
 		text-transform: uppercase;
@@ -19,7 +19,7 @@
 		}
 	}
 	&__title {
-        padding:20px 0 40px 0;
+		padding: 20px 0 40px 0;
 		color: $black;
 		text-align: center;
 		font-size: $base-font-size;
@@ -42,78 +42,110 @@
 			font-size: $base-font-size;
 		}
 	}
-    &__client{
-        padding-left: 20px;
-    }
+	&__client {
+		padding-left: 20px;
+	}
 	&__name {
 		color: $black;
 		font-size: 15px;
 		font-weight: 700;
-        @media screen and (min-width: 768px) {
-            font-size: 20px;
-            
-        }
-        @media screen and (min-width: 1440px) {
-            font-size:$base-font-size;
-        }
+		@media screen and (min-width: 768px) {
+			font-size: 20px;
+		}
+		@media screen and (min-width: 1440px) {
+			font-size: $base-font-size;
+		}
 	}
 	&__address {
 		color: rgba(0, 0, 0, 0.5);
 		font-size: $xs-font-size;
 		font-weight: 700;
-        @media screen and (min-width: 768px) {
-            font-size: $md-font-size;
-            
-        }
+		@media screen and (min-width: 768px) {
+			font-size: $md-font-size;
+		}
 	}
 	&__words {
-		color: rgba(0, 0, 0, 0.60);
+		color: rgba(0, 0, 0, 0.6);
 		font-size: $sm-font-size;
 		font-weight: 500;
-        text-align: center;
-        span{
-            color: $primary-color;
-        }
-        @media screen and (min-width: 768px) {
-            font-size: $lg-font-size;
-            
-        }
+		text-align: center;
+		span {
+			color: $primary-color;
+		}
+		@media screen and (min-width: 768px) {
+			font-size: $lg-font-size;
+		}
 	}
 	&__card {
-        border-radius: 20px;
-        padding: 30px;
-        max-width: 305px;
-        background: rgba(196, 196, 196, 0.50);
-        background-image: url("../assets/img/feedback/medicine.png");
-        background-repeat: no-repeat;
-        background-position: top right;
-        @media screen and (min-width: 768px) {
-            max-width: 400px;   
-        }
-        &:nth-child(2){
-            background: $primary-color;
-        }
+		border-radius: 20px;
+		padding: 30px;
+		max-width: 305px;
+		background: rgba(196, 196, 196, 0.5);
+		// background-image: url("../assets/img/feedback/medicine.png");
+		// background-repeat: no-repeat;
+		// background-position: top right;
+		position: relative;
+		z-index: 4;
+		&::before {
+			content: "";
+			background-image: url("../assets/img/feedback/medicine.png");
+			position: absolute;
+			background-size: cover;
+			top: -10%;
+			left: 30%;
+			bottom: 20%;
+			z-index: -1;
+			width: 124px;
+			@media screen and (min-width: 768px) {
+				width: 175px;
+				top: 0;
+				top: -15%;
+				left: 25%;
+				bottom: 20%;
+			}
+			@media screen and (min-width: 1440px) {
+				top: -40%;
+				left: 20%;
+				bottom: 20%;
+				z-index: -1;
+				width: 295px;
+			}
+		}
+		@media screen and (min-width: 768px) {
+			max-width: 400px;
+		}
+		&:nth-child(2) {
+			background: $primary-color;
+			.feedback__name {
+				color: $secondary-color;
+			}
+			.feedback__address {
+				color: rgba(255, 255, 255, 0.75);
+			}
+			.feedback__words {
+				color: rgba(255, 255, 255, 0.75);
+			}
+		}
 		&--top {
-            display: flex;
-            align-items: center;
-            padding-bottom: 40px;
+			display: flex;
+			align-items: center;
+			padding-bottom: 40px;
 			img {
 				width: 54px;
-                @media screen and (min-width: 768px) {
-                    width: auto;
-                }
+				@media screen and (min-width: 768px) {
+					width: auto;
+				}
 			}
 		}
 	}
-    &__bottom{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        @media screen and (min-width: 1440px) {
-            flex-direction: row;
-            justify-content: space-between;
-            
-        }
-    }
+	&__bottom {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		@media screen and (min-width: 1440px) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
 }

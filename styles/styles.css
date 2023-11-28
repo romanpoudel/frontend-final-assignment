@@ -461,6 +461,21 @@ figure {
     gap: 25px;
     list-style-type: none;
   }
+  .header .header__nav--active {
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+  }
+  .header .header__nav--active ::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #17c2ec;
+  }
   .header .header__nav--item {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 500;
@@ -1124,7 +1139,7 @@ figure {
 
 .feedback {
   padding: 40px 0;
-  padding-bottom: 180px;
+  padding-bottom: 200px;
 }
 .feedback__top {
   text-align: center;
@@ -1226,9 +1241,37 @@ figure {
   padding: 30px;
   max-width: 305px;
   background: rgba(196, 196, 196, 0.5);
+  position: relative;
+  z-index: 4;
+}
+.feedback__card::before {
+  content: "";
   background-image: url("../assets/img/feedback/medicine.png");
-  background-repeat: no-repeat;
-  background-position: top right;
+  position: absolute;
+  background-size: cover;
+  top: -10%;
+  left: 30%;
+  bottom: 20%;
+  z-index: -1;
+  width: 124px;
+}
+@media screen and (min-width: 768px) {
+  .feedback__card::before {
+    width: 175px;
+    top: 0;
+    top: -15%;
+    left: 25%;
+    bottom: 20%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .feedback__card::before {
+    top: -40%;
+    left: 20%;
+    bottom: 20%;
+    z-index: -1;
+    width: 295px;
+  }
 }
 @media screen and (min-width: 768px) {
   .feedback__card {
@@ -1237,6 +1280,15 @@ figure {
 }
 .feedback__card:nth-child(2) {
   background: #17C2EC;
+}
+.feedback__card:nth-child(2) .feedback__name {
+  color: #fff;
+}
+.feedback__card:nth-child(2) .feedback__address {
+  color: rgba(255, 255, 255, 0.75);
+}
+.feedback__card:nth-child(2) .feedback__words {
+  color: rgba(255, 255, 255, 0.75);
 }
 .feedback__card--top {
   display: flex;

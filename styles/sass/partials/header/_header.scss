@@ -23,6 +23,22 @@
 				display: flex;
 				gap: 25px;
 				list-style-type: none;
+				&--active{
+					color: #fff;
+					font-weight: 700;
+					position: relative;
+					::after{
+						content: "";
+						position: absolute;
+						left: 50%;
+						bottom: -15px;
+						height: 10px;
+						width: 10px;
+						border-radius: 50%;
+						background-color: #17c2ec;
+					}
+					
+				}
 				&--item {
 					color: $tertiary-color;
 					font-weight: 500;
